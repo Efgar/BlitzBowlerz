@@ -1,0 +1,42 @@
+.rules-header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 0;
+}
+
+.rules-header img{
+    opacity: 0.1;
+    max-height: 80px;
+}
+
+.rules-tab-pannel{
+    background-color: rgba(224, 224, 224, 0.5);
+    flex: 1;
+}
+
+.rule-icon{
+    max-height: 25px;
+    margin-right: 10px;
+}
+
+.mat-tab-header  {
+    background-color: black;
+    color: white;
+}
+
+.mat-tab-label {
+    color: white;
+    opacity: 1 !important;
+}
+
+.mat-tab-label.mat-tab-label-active {
+    background-color: rgb(255, 255, 255, 0.3);
+    color: white;
+    opacity: 1;
+}
+
+.mat-ink-bar {
+    background-color: darkred !important;
+}

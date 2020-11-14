@@ -1,0 +1,93 @@
+.mat-expansion-panel{
+    background-color: transparent;
+}
+
+.team-list {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap 
+}
+
+.team-box {
+    max-width: 400px;
+    margin: 5px; 
+    overflow: hidden;
+}
+
+.team-card {
+    background-color: transparent;
+    min-height: 120px;
+}
+
+.team-icon {
+    max-width: 30%;
+    -webkit-filter: drop-shadow(1px 1px 0 white)
+        drop-shadow(-1px 1px 0 white)
+        drop-shadow(1px -1px 0 white)
+        drop-shadow(-1px -1px 0 white);
+    filter: drop-shadow(1px 1px 0 white)
+        drop-shadow(-1px 1px 0 white)
+        drop-shadow(1px -1px 0 white)
+        drop-shadow(-1px -1px 0 white);
+}
+
+.team-background {
+    opacity: 0.1;
+    width: 100%;
+    top: 0;
+    position: absolute
+}
+
+.team-sumary {
+    max-width: 65%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.team-naming {
+    font-family: ShadowsIntoLight
+}
+
+.team-races{
+    font-family: CaesarDressing;
+    -webkit-text-stroke: 1px black;
+    font-size: xx-large;
+    margin: 0;
+}
+
+hr.dashed {
+    border-top: 3px;
+    margin: 0;
+}
+
+.team-flag {
+    max-width: 50%;
+    max-height: none;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.team-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.player-table td, th{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0;
+}
+
+.player-table td{
+    text-align: center;
+}
+
+.player-skills {
+    max-width: 25%;
+    max-height: none;
+    margin-right: 5px;
+}
+

@@ -1,0 +1,66 @@
+@font-face {
+    font-family: CaesarDressing;
+    src: url("../assets/_fonts/CaesarDressing-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: ShadowsIntoLight;
+    src: url("../assets/_fonts/ShadowsIntoLight-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Gutcruncher;
+    src: url("../assets/_fonts/Gutcruncher.otf") format("opentype");
+}
+
+::ng-deep .mat-tooltip  {
+    white-space: pre-line !important;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    min-height: 100%;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.titlebar{
+    font-family: Gutcruncher;
+    text-shadow: 0 0 10px #ffffff;
+    height: 25px;
+    background-color: rgb(18, 121, 156);
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 2px 5px 10px rgb(70, 130, 180);
+    z-index: 10;
+    flex: 1 1 auto;
+}
+
+.menubar{
+    min-height: 40px;
+    background-color: black;
+    padding-left: 10%;
+    flex: 1 1 auto;
+}
+
+.canvas{
+    margin:0 auto;
+    flex: 20;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-info{
+    flex: 1 1 auto;
+    text-align: center;
+    min-height: 80px;
+    height: 80px;
+    background-color: black;
+    color: white;
+}
