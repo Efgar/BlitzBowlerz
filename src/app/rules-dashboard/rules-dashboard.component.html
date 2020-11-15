@@ -1,35 +1,36 @@
-<div style="width: 100vw; display:flex; flex-direction: column; flex: 1 1 auto;">
+<div style="display:flex; flex-direction: column; flex: 1 1 auto;">
     <div class="rules-header">
         <img src="assets/_img/_backgrounds/BlitzBowlHeader.jpg">
+        <b style="z-index: 10;">Rules compendiuM</b>
     </div>
-        <mat-tab-group mat-align-tabs="center" class="rules-tab-pannel">
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <img class="rule-icon" src="assets/_img/_icons/team.png">
-                    <b>TEAMS</b>
-                </ng-template>
-                <app-team></app-team>
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <img class="rule-icon" src="assets/_img/_icons/ball.png">
-                    <b>BALL CARDS</b>
-                </ng-template>
-                Content 1
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <img class="rule-icon" src="assets/_img/_icons/challenge.png">
-                    <b>CHALLENGE CARDS</b>
-                </ng-template>
-                Content 1
-            </mat-tab>
-            <mat-tab>
-                <ng-template mat-tab-label>
-                    <img class="rule-icon" src="assets/_img/_icons/rules.png">
-                    <b>SPECIAL RULES</b>
-                </ng-template>
-                Content 1
-            </mat-tab>
-        </mat-tab-group>
+    <mat-tab-group mat-align-tabs="center" class="rules-tab-pannel">
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <img class="rule-icon" src="assets/_img/_icons/team.png">
+                teams
+            </ng-template>
+            <app-team></app-team>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <img class="rule-icon" src="assets/_img/_icons/ball.png">
+                ball cards
+            </ng-template>
+            Content 1
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <img class="rule-icon" src="assets/_img/_icons/challenge.png">
+                challenge cards
+            </ng-template>
+            Content 1
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <img class="rule-icon" src="assets/_img/_icons/rules.png">
+                special rules
+            </ng-template>
+            Content 1
+        </mat-tab>
+    </mat-tab-group>
 </div>

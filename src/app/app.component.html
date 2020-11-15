@@ -1,21 +1,26 @@
 <div class="main-container">
-    <mat-toolbar color="primary" class="titlebar">
-        <mat-toolbar-row>
+    <mat-toolbar class="titlebar-container">
+        <mat-toolbar-row class="titlebar">
             <span>Blitz bowlerZ</span>
-            <span class="example-spacer"></span>
+            <span class="titlebar-spacer"></span>
             <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
             <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
         </mat-toolbar-row>
     </mat-toolbar>
     <div class="menubar">
     </div>
+    <div class="canvas">
+        <img class="filler left-filler" src="assets/_img/_backgrounds/blood_bowlers_left_fill.jpg">
+        <div class="content-box">
+            <app-rules-dashboard class="content"></app-rules-dashboard>
+        </div>
+        
+        <router-outlet></router-outlet>
+        <img class="filler right-filler" src="assets/_img/_backgrounds/blood_bowlers_right_fill.jpg">
+    </div>
     
-    <app-rules-dashboard class="canvas"></app-rules-dashboard>
+    
     <div class="footer-info">
         <p>All rights</p>
     </div>
 </div>
-
-
-
-<router-outlet></router-outlet>

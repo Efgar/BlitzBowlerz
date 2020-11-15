@@ -70,9 +70,19 @@ hr.dashed {
 .team-buttons {
     display: flex;
     justify-content: center;
+    max-height: 25px;
+}
+
+.team-buttons p{
+    display: flex;
+    justify-content: center;
+    text-transform: lowercase;
+    font-family: Gutcruncher !important;
 }
 
 .player-table td, th{
+    text-transform: lowercase;
+    font-family: Gutcruncher;
     color: black;
     background-color: rgba(255, 255, 255, 0.6);
     border: 1px solid white;
