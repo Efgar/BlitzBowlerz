@@ -1,7 +1,16 @@
-
-    <mat-expansion-panel class="challenge-container">
-        <mat-expansion-panel-header class="challenge-title">
-            awesomeness
-        </mat-expansion-panel-header>
-        The challenge description
-    </mat-expansion-panel>
+<mat-expansion-panel class="challenge-container" hideToggle>
+    <mat-expansion-panel-header class="challenge-title">
+        <div>
+            <img src="assets/_img/_backgrounds/points-background.png" style="height: 25px;">{{challenge.name}} [{{challenge.points}}]
+        </div>
+        <h2 style="text-align: right;">{{challenge.bonusPlayName}}</h2>
+    </mat-expansion-panel-header>
+    <div class="challenge-content">
+        <p>
+            {{challenge.cardText}}
+        </p>
+        <p>
+            {{challenge.bonusPlayText}}
+        </p>
+    </div>
+</mat-expansion-panel>

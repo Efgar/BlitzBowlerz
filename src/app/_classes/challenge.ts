@@ -1,5 +1,5 @@
 export class Challenge {
-    title: string;
+    name: string;
     image: string;
     cardText: string;
     points: number;

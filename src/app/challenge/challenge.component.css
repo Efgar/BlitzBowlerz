@@ -4,3 +4,23 @@
     width: 90%;
     background: linear-gradient(90deg, darkred 45%, rgba(255,255,255,1) 50%, var(--blitzer-blue) 55%); 
 }
+
+.challenge-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.challenge-title h2{
+    font-family: Gutcruncher;
+    font-size: medium;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    margin: 0;
+    flex: 1;
+}
+
+.challenge-content {
+    display: flex;
+    justify-content: space-between;
+    font-family: ShadowsIntoLight;
+}

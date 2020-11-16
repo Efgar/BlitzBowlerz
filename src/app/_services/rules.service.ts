@@ -13,7 +13,7 @@ export class RulesService {
   getChallengeCards(): Challenge[] {
     return [
       {
-        title: "The name",
+        name: "The name",
         image: "string",
         cardText: "Ipsum lorenz of challenges",
         points: 1,
@@ -22,7 +22,7 @@ export class RulesService {
         isEndGame: false
       },
       {
-        title: "The Endgame name",
+        name: "The Endgame name",
         image: "string",
         cardText: "Ipsum lorenz of endgame challenges",
         points: 3,
