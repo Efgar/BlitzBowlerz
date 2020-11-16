@@ -1,56 +1,55 @@
-<div class="team-list">
-    <span *ngFor="let team of teams">
-        <mat-card style="background-color: {{team.color}}" [value]="team" class="team-box">
-            <img [src]="team.icon" [alt]="team.name" class="team-background">
-            <mat-card-content>
-                <mat-expansion-panel>
-                    <mat-expansion-panel-header class="team-card">
-                        <img [src]="team.icon" [alt]="team.name" class="team-icon">
-                        <div class="team-sumary">
-                            <div class="team-naming">
-                                <h1 class="team-races">{{team.race}}</h1>
-                                <hr class="dashed">
-                                <div class="team-name">{{team.name}}</div>
-                            </div>
-                            <button mat-icon-button disabled *ngFor="let flag of team.flags"
-                                matTooltip="{{flag.name}}:&#13;{{flag.description}}">
-                                <img [src]="flag.icon" [alt]="flag.name" class="team-flag">
-                            </button>
-                        </div>
-                    </mat-expansion-panel-header>
-                    <table class="player-table">
-                        <tr>
-                            <th colspan="6">ROOSTER</th>
-                        </tr>
-                        <tr>
-                            <th>#</th>
-                            <th>Position</th>
-                            <th>Move</th>
-                            <th>Throw</th>
-                            <th>Armor</th>
-                            <th>Skills</th>
-                        </tr>
-                        <tr *ngFor="let position of team.rooster">
-                            <td>{{position.amount}}</td>
-                            <td>{{position.player.name}}</td>
-                            <td>{{position.player.move}}</td>
-                            <td>{{position.player.throw}}</td>
-                            <td>{{position.player.armor}}</td>
-                            <td>
-                                <span mat-icon-button *ngFor="let ability of position.player.abilities"
-                                    matTooltip="{{ability.name}}:  {{ability.description}}">
-                                    <img [src]="ability.icon" [alt]="ability.name" class="player-skills">
-                                </span>
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="team-buttons">
-                        <button mat-button>
-                            <p>DETAILS</p>
-                        </button>
+<mat-card style="background-color: {{team.color}}" class="team-box">
+    <img [src]="team.icon" [alt]="team.name" class="team-background">
+    <mat-card-content>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header class="team-card">
+                <div class="team-icon">
+                    <img [src]="team.icon" [alt]="team.name">
+                </div>
+                
+                <div class="team-sumary">
+                    <div class="team-naming">
+                        <h1 class="team-title">{{team.name}}</h1>
+                        <hr class="dashed">
+                        <div class="team-subtitle">{{team.race.join(" / ")}}</div>
                     </div>
-                </mat-expansion-panel>
-            </mat-card-content>
-        </mat-card>
-    </span>
-</div>
+                    <button mat-icon-button disabled *ngFor="let flag of team.flags"
+                        matTooltip="{{flag.name}}:&#13;{{flag.description}}">
+                        <img [src]="flag.icon" [alt]="flag.name" class="team-flag">
+                    </button>
+                </div>
+            </mat-expansion-panel-header>
+            <table class="player-table">
+                <tr>
+                    <th colspan="6">ROOSTER</th>
+                </tr>
+                <tr>
+                    <th>#</th>
+                    <th>Position</th>
+                    <th>Move</th>
+                    <th>Throw</th>
+                    <th>Armor</th>
+                    <th>Skills</th>
+                </tr>
+                <tr *ngFor="let position of team.rooster">
+                    <td>{{position.amount}}</td>
+                    <td>{{position.player.name}}</td>
+                    <td>{{position.player.move}}</td>
+                    <td>{{position.player.throw}}</td>
+                    <td>{{position.player.armor}}</td>
+                    <td>
+                        <span mat-icon-button *ngFor="let ability of position.player.abilities"
+                            matTooltip="{{ability.name}}:  {{ability.description}}">
+                            <img [src]="ability.icon" [alt]="ability.name" class="player-skills">
+                        </span>
+                    </td>
+                </tr>
+            </table>
+            <div class="team-buttons">
+                <button mat-button>
+                    <p>DETAILS</p>
+                </button>
+            </div>
+        </mat-expansion-panel>
+    </mat-card-content>
+</mat-card>

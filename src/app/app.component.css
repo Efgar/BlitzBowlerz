@@ -33,6 +33,7 @@
     box-shadow: 0 4px 5px 10px var(--blitzer-blue);
     z-index: 10;
     flex: 1 1 auto;
+    max-height: 20px;
 }
 
 .titlebar{
@@ -42,6 +43,7 @@
     font-family: Gutcruncher;
     text-shadow: 0 0 10px #ffffff;
     background-color: transparent;
+    z-index: 10;
 }
 
 .menubar{
@@ -73,7 +75,6 @@
     border-right: 4px black double;
     display: flex;
     flex-direction: column;
-    min-width: 400px;
     max-width: 100vw;
 }
 

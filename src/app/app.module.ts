@@ -17,7 +17,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
-import {MatToolbarModule} from '@angular/material/toolbar'; 
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { ChallengeComponent } from './challenge/challenge.component'; 
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     TeamComponent,
     GameComponent,
     TeamDetailsComponent,
-    RulesDashboardComponent
+    RulesDashboardComponent,
+    ChallengeComponent
   ],
   imports: [
     BrowserModule,
