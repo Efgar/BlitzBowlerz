@@ -6,23 +6,25 @@
     <mat-tab-group mat-align-tabs="center" class="rules-tab-pannel">
         <mat-tab>
             <ng-template mat-tab-label>
+                <img class="rule-icon" src="assets/_img/_icons/challenge.png">
+                challenge cards
+            </ng-template>
+            <div class="rules-tab-content">
+                <div style="width: 100%; display: flex; flex-direction: column;">
+                    <span *ngFor="let challenge of challenges">
+                        <app-challenge [challenge]="challenge"></app-challenge>
+                    </span>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
                 <img class="rule-icon" src="assets/_img/_icons/team.png">
                 teams
             </ng-template>
             <div class="rules-tab-content">
                 <span *ngFor="let team of teams">
                     <app-team [team]="team"></app-team>
-                </span>
-            </div>
-        </mat-tab>
-        <mat-tab>
-            <ng-template mat-tab-label>
-                <img class="rule-icon" src="assets/_img/_icons/challenge.png">
-                challenge cards
-            </ng-template>
-            <div class="rules-tab-content">
-                <span *ngFor="let challenge of challenges">
-                    <app-challenge [challenge]="challenge"></app-challenge>
                 </span>
             </div>
         </mat-tab>

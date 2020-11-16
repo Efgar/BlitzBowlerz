@@ -11,7 +11,26 @@ import { Team } from '../_classes/team';
 export class RulesService {
   
   getChallengeCards(): Challenge[] {
-    return [];
+    return [
+      {
+        title: "The name",
+        image: "string",
+        cardText: "Ipsum lorenz of challenges",
+        points: 1,
+        bonusPlayName: "The bonus play",
+        bonusPlayText: "This is how we play the play",
+        isEndGame: false
+      },
+      {
+        title: "The Endgame name",
+        image: "string",
+        cardText: "Ipsum lorenz of endgame challenges",
+        points: 3,
+        bonusPlayName: "The Endgame bonus play",
+        bonusPlayText: "This is how we play the End play",
+        isEndGame: true
+      }
+    ];
   }
 
   getBallRules(): Ball[] {

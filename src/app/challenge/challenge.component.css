@@ -1,0 +1,6 @@
+.challenge-container{
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    background: linear-gradient(90deg, darkred 45%, rgba(255,255,255,1) 50%, var(--blitzer-blue) 55%); 
+}
