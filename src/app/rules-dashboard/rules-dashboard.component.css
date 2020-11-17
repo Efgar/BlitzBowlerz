@@ -10,7 +10,7 @@
     -webkit-text-stroke: 1px var(--blitzer-blue);
     font-size: xx-large;
     text-shadow: 1px 1px 2px darkred, 0 0 25px rgb(  243, 156, 18  ), 0 0 5px black;
-    background-color: transparent;
+    background-color: white;
     margin: 0;
     z-index: 100;
 }
@@ -40,7 +40,7 @@
 }
 
 .mat-tab-header  {
-    background-color: darkred;
+    background: url(../../assets/_img/_textures/45-degree-fabric-light.png), linear-gradient(180deg, white 0%,var(--secondary-color) 10%, var(--secondary-color) 90%, transparent 100%);
     color: white;
 }
 
@@ -51,12 +51,12 @@
 }
 
 .mat-tab-label.mat-tab-label-active {
-    background-color: rgb(255, 255, 255, 0.3);
-    color: white;    
-    text-shadow: 0 0 10px #ffffff;
+    background-color: rgb(255, 255, 255, 0.2);
+    color: white;
+    text-shadow: 0 0 2px black, 0 0 10px #ffffff;
     opacity: 1;
 }
 
 .mat-ink-bar {
-    background-color: black !important;
+    background-color: transparent !important;
 }

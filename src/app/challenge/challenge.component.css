@@ -6,17 +6,40 @@
 }
 
 .challenge-title {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.challenge-title h2{
+.challenge-title-side {
+    flex: 1;
+    display: flex;
+}
+
+.left {
+    max-width: 40%;
+    justify-content: start;
+}
+
+.right {
+    max-width: 40%;
+    justify-content: end;
+}
+
+.challenge-title-points {
+    text-align: center; 
+    margin-right: 5px;
+    background-size: 100%; 
+    width: 33px; 
+    background: url('../../assets/_img/_backgrounds/points_background_white.png') no-repeat center center;
+}
+
+.challenge-title-text{
     font-family: Gutcruncher;
     font-size: medium;
     color: white;
-    -webkit-text-stroke: 0.5px black;
     margin: 0;
-    flex: 1;
+    padding-left: 2px;
 }
 
 .challenge-content {

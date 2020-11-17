@@ -1,16 +1,23 @@
 <mat-expansion-panel class="challenge-container" hideToggle>
-    <mat-expansion-panel-header class="challenge-title">
-        <div>
-            <img src="assets/_img/_backgrounds/points-background.png" style="height: 25px;">{{challenge.name}} [{{challenge.points}}]
+    <mat-expansion-panel-header style="height: auto;">
+        <div class="challenge-title">
+            <div class="challenge-title-side left">
+                <div class="challenge-title-points">
+                    <h2 class="challenge-title-text">{{challenge.points}}</h2>
+                </div>
+                <h2 class="challenge-title-text">{{challenge.name}}</h2>
+            </div>
+            <div class="challenge-title-side right">
+                <h2 class="challenge-title-text" style="text-align: right;">{{challenge.bonusPlayName}}</h2>
+            </div>
         </div>
-        <h2 style="text-align: right;">{{challenge.bonusPlayName}}</h2>
     </mat-expansion-panel-header>
     <div class="challenge-content">
-        <p>
-            {{challenge.cardText}}
-        </p>
-        <p>
-            {{challenge.bonusPlayText}}
-        </p>
+        <div class="left">
+                {{challenge.cardText}}
+        </div>
+        <div class="right">
+                {{challenge.bonusPlayText}}
+        </div>
     </div>
 </mat-expansion-panel>

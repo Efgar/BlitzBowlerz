@@ -17,7 +17,7 @@
     white-space: pre-line !important;
 }
 
-.main-container{
+.main-container{    
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -29,8 +29,7 @@
 }
 
 .titlebar-container{
-    background-color: var(--blitzer-blue);
-    box-shadow: 0 4px 5px 10px var(--blitzer-blue);
+    background: url(../assets/_img/_textures/45-degree-fabric-light.png), linear-gradient(180deg, var(--primary-color) 80%, white 100%);
     z-index: 10;
     flex: 1 1 auto;
     max-height: 20px;
@@ -42,15 +41,7 @@
     max-width: 1200px;
     font-family: Gutcruncher;
     text-shadow: 0 0 10px #ffffff;
-    background-color: transparent;
     z-index: 10;
-}
-
-.menubar{
-    min-height: 40px;
-    background-color: black;
-    padding-left: 10%;
-    flex: 1 1 auto;
 }
 
 .canvas{
@@ -60,20 +51,13 @@
 }
 
 .content-box{
-    background-color: white;
     margin: 0 auto;
-    max-width: 1200px;
     width: 100%;
     display: flex;
 }
 
 .content{
     margin: 0;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    border-left: 4px black double;
-    border-right: 4px black double;
     display: flex;
     flex-direction: column;
     max-width: 100vw;

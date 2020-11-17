@@ -4,6 +4,8 @@
 html, body {
     height: 100%; 
     --blitzer-blue: rgb(  20, 51, 114  );
+    --primary-color: black;
+    --secondary-color: rgb(39, 24, 10);
 }
 
 body { 
