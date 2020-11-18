@@ -11,3 +11,29 @@ html, body {
 body { 
     margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
+
+
+
+.info-box {
+    border-radius: 10px;
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+    font-family: ShadowsIntoLight; 
+    text-align: center; 
+    width: 100%; 
+    background: url(./assets/_img/_textures/leather.png), rgb(227, 228, 207);
+}
+
+.info-box h2{
+    text-transform: lowercase;
+    font-family: Gutcruncher;
+    font-size: medium;
+    margin: 0;
+    padding-left: 2px;
+}
+
+.info-box p {
+    text-align: left;
+    margin-bottom: 5px;
+}

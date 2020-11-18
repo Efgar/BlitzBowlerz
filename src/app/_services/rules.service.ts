@@ -19,7 +19,11 @@ export class RulesService {
         points: 1,
         bonusPlayName: "The bonus play",
         bonusPlayText: "This is how we play the play",
-        isEndGame: false
+        isEndGame: false,
+        faqs: [
+          "Da rule is clear",
+          "Da rule is the rule"
+        ]
       },
       {
         name: "The Endgame name",
@@ -28,7 +32,8 @@ export class RulesService {
         points: 3,
         bonusPlayName: "The Endgame bonus play",
         bonusPlayText: "This is how we play the End play",
-        isEndGame: true
+        isEndGame: true,
+        faqs: []
       }
     ];
   }

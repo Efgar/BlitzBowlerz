@@ -49,7 +49,6 @@
 .challenge-title-text h2{
     font-family: Gutcruncher;
     font-size: medium;
-    color: white;
     margin: 0;
     padding-left: 2px;
 }
@@ -58,4 +57,5 @@
     display: flex;
     justify-content: space-between;
     font-family: ShadowsIntoLight;
+    margin-bottom: 5px;
 }

@@ -6,4 +6,5 @@ export class Challenge {
     bonusPlayName: string;
     bonusPlayText: string;
     isEndGame: boolean;
+    faqs: string[];
 }

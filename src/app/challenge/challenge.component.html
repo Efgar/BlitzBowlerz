@@ -8,7 +8,7 @@
                 <div class="challenge-title-text">
                     <h2>{{challenge.name}}</h2>
                 </div>
-                
+
             </div>
             <div class="challenge-title-side right">
                 <div class="challenge-title-text">
@@ -17,12 +17,22 @@
             </div>
         </div>
     </mat-expansion-panel-header>
-    <div class="challenge-content">
-        <div class="left">
+    <div>
+        <div class="challenge-content">
+            <div class="left">
                 {{challenge.cardText}}
-        </div>
-        <div class="right">
+            </div>
+            <div class="right">
                 {{challenge.bonusPlayText}}
+            </div>
+        </div>
+        <div class="info-box">
+            <h2 style="color: black;">general info</h2>
+            <b *ngIf="challenge.isEndGame">Endgame challenge / </b><b>{{challenge.points}} Points</b>
+            
+            <p class="challenge-info-faq" *ngFor="let faq of challenge.faqs">
+                - {{faq}}
+            </p>
         </div>
     </div>
 </mat-expansion-panel>

@@ -1,7 +1,7 @@
-<div style="display:flex; flex-direction: column; flex: 1 1 auto;">
+<div class="rules-container">
     <div class="rules-header">
         <img src="assets/_img/_backgrounds/blood_stain.png">
-        <b style="z-index: 10;">Rules compendiuM</b>
+        <b>Rules compendiuM</b>
     </div>
     <mat-tab-group mat-align-tabs="center" class="rules-tab-pannel">
         <mat-tab>
@@ -10,11 +10,7 @@
                 challenge cards
             </ng-template>
             <div class="rules-tab-content">
-                <div style="width: 100%; display: flex; flex-direction: column;">
-                    <span *ngFor="let challenge of challenges">
-                        <app-challenge [challenge]="challenge"></app-challenge>
-                    </span>
-                </div>
+                <app-challenge-list style="width: 100%;" [challenges]="challenges"></app-challenge-list>
             </div>
         </mat-tab>
         <mat-tab>

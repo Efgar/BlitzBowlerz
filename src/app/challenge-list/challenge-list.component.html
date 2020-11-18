@@ -1,0 +1,14 @@
+<div style="width: 100%; display: flex; flex-direction: column;">
+    <mat-icon>search</mat-icon>
+    <mat-form-field class="challenges-search-input">
+        <mat-label>Search</mat-label>
+        <input matInput type="text" [(ngModel)]="value">
+        <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-form-field>
+
+    <span *ngFor="let challenge of challenges">
+        <app-challenge [challenge]="challenge"></app-challenge>
+    </span>
+</div>
