@@ -2,7 +2,7 @@
     margin: auto;
     margin-top: 10px;
     width: 90%;
-    background: linear-gradient(90deg, darkred 45%, rgba(255,255,255,1) 50%, var(--blitzer-blue) 55%); 
+    background: linear-gradient(90deg, darkred 48%, rgba(255,255,255,1) 50%, var(--blitzer-blue) 52%); 
 }
 
 .challenge-title {
@@ -24,17 +24,29 @@
 .right {
     max-width: 40%;
     justify-content: end;
+    text-align: right;
 }
 
 .challenge-title-points {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center; 
     margin-right: 5px;
-    background-size: 100%; 
-    width: 33px; 
+    background-size: 29px !important; 
+    min-width: 30px; 
+    width: 30px; 
     background: url('../../assets/_img/_backgrounds/points_background_white.png') no-repeat center center;
 }
 
+
 .challenge-title-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.challenge-title-text h2{
     font-family: Gutcruncher;
     font-size: medium;
     color: white;

@@ -2,13 +2,18 @@
     <mat-expansion-panel-header style="height: auto;">
         <div class="challenge-title">
             <div class="challenge-title-side left">
-                <div class="challenge-title-points">
-                    <h2 class="challenge-title-text">{{challenge.points}}</h2>
+                <div class="challenge-title-points challenge-title-text">
+                    <h2>{{challenge.points}}</h2>
                 </div>
-                <h2 class="challenge-title-text">{{challenge.name}}</h2>
+                <div class="challenge-title-text">
+                    <h2>{{challenge.name}}</h2>
+                </div>
+                
             </div>
             <div class="challenge-title-side right">
-                <h2 class="challenge-title-text" style="text-align: right;">{{challenge.bonusPlayName}}</h2>
+                <div class="challenge-title-text">
+                    <h2>{{challenge.bonusPlayName}}</h2>
+                </div>
             </div>
         </div>
     </mat-expansion-panel-header>
