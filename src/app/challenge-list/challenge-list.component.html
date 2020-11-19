@@ -2,8 +2,8 @@
     <mat-icon>search</mat-icon>
     <mat-form-field class="challenges-search-input">
         <mat-label>Search</mat-label>
-        <input matInput type="text" [(ngModel)]="value">
-        <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <input matInput type="text" [(ngModel)]="filterChallengeName">
+        <button mat-button *ngIf="filterChallengeName" matSuffix mat-icon-button aria-label="Clear" (click)="filterChallengeName=''">
             <mat-icon>close</mat-icon>
         </button>
     </mat-form-field>

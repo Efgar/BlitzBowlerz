@@ -16,13 +16,13 @@ body {
 
 .info-box {
     border-radius: 10px;
-    border: 2px solid black;
     color: black;
     padding: 5px;
     font-family: ShadowsIntoLight; 
     text-align: center; 
     width: 100%; 
     background: url(./assets/_img/_textures/leather.png), rgb(227, 228, 207);
+    box-shadow: 1px 1px 5px 3px var(--secondary-color);
 }
 
 .info-box h2{
@@ -36,4 +36,9 @@ body {
 .info-box p {
     text-align: left;
     margin-bottom: 5px;
+}
+
+.main-content-box {
+    margin: 0 auto;
+    max-width: 1000px;
 }

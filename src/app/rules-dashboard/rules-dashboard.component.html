@@ -9,7 +9,7 @@
                 <img class="rule-icon" src="assets/_img/_icons/challenge.png">
                 challenge cards
             </ng-template>
-            <div class="rules-tab-content">
+            <div class="rules-tab-content main-content-box">
                 <app-challenge-list style="width: 100%;" [challenges]="challenges"></app-challenge-list>
             </div>
         </mat-tab>
@@ -18,7 +18,7 @@
                 <img class="rule-icon" src="assets/_img/_icons/team.png">
                 teams
             </ng-template>
-            <div class="rules-tab-content">
+            <div class="rules-tab-content main-content-box">
                 <span *ngFor="let team of teams">
                     <app-team [team]="team"></app-team>
                 </span>
@@ -29,7 +29,7 @@
                 <img class="rule-icon" src="assets/_img/_icons/ball.png">
                 ball cards
             </ng-template>
-            <div class="rules-tab-content">
+            <div class="rules-tab-content main-content-box">
                 <span *ngFor="let team of teams">
                     <app-team [team]="team"></app-team>
                 </span>

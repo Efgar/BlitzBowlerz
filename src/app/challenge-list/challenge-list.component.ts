@@ -8,6 +8,7 @@ import { Challenge } from '../_classes/challenge';
 })
 export class ChallengeListComponent implements OnInit {
   @Input() challenges: Challenge[];
+  filterChallengeName: string;
   
   constructor() { }
 

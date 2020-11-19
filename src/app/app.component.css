@@ -36,9 +36,7 @@
 }
 
 .titlebar{
-    margin: 0 auto;
     padding: 5px;
-    max-width: 1200px;
     font-family: Gutcruncher;
     text-shadow: 0 0 10px #ffffff;
     z-index: 10;
