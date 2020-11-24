@@ -45,11 +45,11 @@
 }
 
 .team-subtitle {
-    font-family: ShadowsIntoLight
+    font-family: var(--secondary-font-family)
 }
 
 .team-title{
-    font-family: Gutcruncher;
+    font-family: var(--main-font-family);
     -webkit-text-stroke: 1px black;
     font-size: x-large;
     margin: 0;
@@ -74,12 +74,12 @@ hr.dashed {
     display: flex;
     justify-content: center;
     text-transform: lowercase;
-    font-family: Gutcruncher !important;
+    font-family: var(--main-font-family) !important;
 }
 
 .player-table td, th{
     text-transform: lowercase;
-    font-family: Gutcruncher;
+    font-family: var(--main-font-family);
     color: black;
     background-color: rgba(255, 255, 255, 0.6);
     border: 1px solid white;

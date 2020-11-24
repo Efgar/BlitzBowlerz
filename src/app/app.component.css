@@ -1,18 +1,3 @@
-@font-face {
-    font-family: CaesarDressing;
-    src: url("../assets/_fonts/CaesarDressing-Regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: ShadowsIntoLight;
-    src: url("../assets/_fonts/ShadowsIntoLight-Regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: Gutcruncher;
-    src: url("../assets/_fonts/Gutcruncher.otf") format("opentype");
-}
-
 ::ng-deep .mat-tooltip  {
     white-space: pre-line !important;
 }
@@ -56,7 +41,7 @@
 
 .titlebar{
     padding: 5px;
-    font-family: Gutcruncher;
+    font-family: var(--main-font-family);
     text-shadow: 0 0 10px #ffffff;
     z-index: 10;
 }
