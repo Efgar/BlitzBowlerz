@@ -22,17 +22,36 @@
     flex-direction: column;
     overflow: auto;
     min-height: 100%;
+    background: url(../assets/_img/_textures/football-no-lines.png), rgb(26, 39, 31);
 }
+
+.main-container::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    z-index: -200;
+    background-image: url(../assets/_img/_backgrounds/BBLogo_bw.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 200px;
+    background-size: 60vh;
+    z-index: 1;
+    opacity: 0.3;
+  }
 
 .titlebar-spacer {
     flex: 1 1 auto;
 }
 
 .titlebar-container{
-    background: url(../assets/_img/_textures/45-degree-fabric-light.png), linear-gradient(180deg, var(--primary-color) 80%, white 100%);
+    background: url(../assets/_img/_textures/45-degree-fabric-light.png), var(--primary-color);
     z-index: 10;
     flex: 1 1 auto;
     max-height: 20px;
+    border-bottom: 2px solid white;
 }
 
 .titlebar{
@@ -69,22 +88,5 @@
     height: 80px;
     background-color: black;
     color: white;
-}
-
-.filler{
-    opacity: 0.5;
-    position: absolute;
-    z-index: -1;
-    max-width: 50%;
-    max-height: 80vh;
-    vertical-align: middle;
-    top: 100px;
-}
-
-.left-filler{
-    left: 0;
-}
-
-.right-filler{
-    right: 0;
+    border-top: 2px solid white;
 }

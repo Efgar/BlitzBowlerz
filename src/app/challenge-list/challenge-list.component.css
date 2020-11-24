@@ -1,3 +1,52 @@
+.challenges-section-container {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+    --search-text-color: white;
+    --search-text-font: Gutcruncher;
+}
+
+.challenges-search-section {
+    margin-top: 10px; 
+    display: flex; 
+    justify-content: space-evenly;
+}
+
 .challenges-search-input{
     width: 100px;
 }
+
+.mat-input-element  {
+    font-family: var(--search-text-font) !important;
+    color: var(--search-text-color) !important;
+    caret-color: var(--search-text-color) !important;
+}
+
+.mat-form-field-underline {
+    height: 2px !important;
+    background-color: var(--search-text-color) !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple{
+    background-color: var(--search-text-color) !important;
+}
+
+.mat-form-field-label  {
+    font-family: var(--search-text-font) !important;
+    color: var(--search-text-color) !important;
+}
+
+.challenges-search-icons {
+    color: var(--search-text-color) !important;
+}
+
+.challenges-search-icons svg {
+    fill: var(--search-text-color);
+}
+
+.challenges-search-checkbox {
+    font-family: Gutcruncher !important;
+    color:  var(--search-text-color);
+    margin-top: 12px;
+}
+

@@ -20,6 +20,7 @@ export class RulesService {
         bonusPlayName: "The bonus play",
         bonusPlayText: "This is how we play the play",
         isEndGame: false,
+        isHomeBrew: false,
         faqs: [
           "Da rule is clear",
           "Da rule is the rule"
@@ -33,6 +34,7 @@ export class RulesService {
         bonusPlayName: "The Endgame bonus play",
         bonusPlayText: "This is how we play the End play",
         isEndGame: true,
+        isHomeBrew: true,
         faqs: []
       }
     ];

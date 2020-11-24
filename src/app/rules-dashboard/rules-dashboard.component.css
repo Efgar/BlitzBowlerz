@@ -4,6 +4,19 @@
     flex: 1 1 auto;
 }
 
+
+.tab-background{
+    opacity: 0.8;
+    position: absolute;
+    z-index: -1;
+    width: 300px;
+    left: 30%;
+    top: 200px;
+    margin: 0 auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
 .rules-header{
     height: 80px;
     display: flex;
@@ -16,7 +29,7 @@
     -webkit-text-stroke: 1px var(--blitzer-blue);
     font-size: xx-large;
     text-shadow: 1px 1px 2px darkred, 0 0 25px rgb(  243, 156, 18  ), 0 0 5px black;
-    background-color: white;
+    background-color: transparent;
     margin: 0;
     z-index: 100;
 }
@@ -35,6 +48,8 @@
 
 .rules-tab-pannel{
     background-color: rgba(224, 224, 224, 0.5);
+    
+    background: transparent;
     flex: 1;
 }
 
@@ -56,8 +71,10 @@
 }
 
 .mat-tab-header  {
-    background: url(../../assets/_img/_textures/45-degree-fabric-light.png), linear-gradient(180deg, white 0%,var(--secondary-color) 10%, var(--secondary-color) 90%, transparent 100%);
+    background: url(../../assets/_img/_textures/45-degree-fabric-light.png), var(--secondary-color);
     color: white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 .mat-tab-label {
