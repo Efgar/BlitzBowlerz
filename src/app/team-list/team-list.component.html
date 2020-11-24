@@ -1,0 +1,28 @@
+<div class="teams-section-container">
+    <div class="teams-search-section">
+        <mat-form-field class="teams-search-input">
+            <mat-label><mat-icon class="teams-search-icons">search</mat-icon>  name</mat-label>
+            <input matInput type="text" [(ngModel)]="filterName" (keyup)="filterTeams()">
+            <button mat-button *ngIf="filterName" matSuffix mat-icon-button aria-label="Clear" (click)="clearName()">
+                <mat-icon class="teams-search-icons">close</mat-icon>
+            </button>
+        </mat-form-field>
+
+        <mat-form-field class="teams-search-input">
+            <mat-label><mat-icon class="teams-search-icons">search</mat-icon>  race</mat-label>
+            <input matInput type="text" [(ngModel)]="filterRace" (keyup)="filterTeams()">
+            <button mat-button *ngIf="filterRace" matSuffix mat-icon-button aria-label="Clear" (click)="clearRace()">
+                <mat-icon class="teams-search-icons">close</mat-icon>
+            </button>
+        </mat-form-field>
+
+        <mat-checkbox class="teams-search-checkbox" [(ngModel)]="onlyOficial" (change)="filterTeams()">only oficial</mat-checkbox>
+        <mat-checkbox class="teams-search-checkbox" [(ngModel)]="includeBeta" (change)="filterTeams()">experimental</mat-checkbox>
+    </div>
+    
+    <div class="teams-list-container">
+        <span *ngFor="let team of filteredTeams">
+            <app-team [team]="team"></app-team>
+        </span>
+    </div>
+</div>

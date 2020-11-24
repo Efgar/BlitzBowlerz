@@ -6,8 +6,17 @@
     <mat-tab-group mat-align-tabs="center" class="rules-tab-pannel">
         <mat-tab>
             <ng-template mat-tab-label>
+                <img class="rule-icon" src="assets/_img/_icons/team.png">
+                teams
+            </ng-template>
+            <div class="rules-tab-content main-content-box">
+                <app-team-list style="width: 100%;" [teams]="teams"></app-team-list>
+            </div>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
                 <img class="rule-icon" src="assets/_img/_icons/challenge.png">
-                challenge cards
+                challenges
             </ng-template>
             <div class="rules-tab-content main-content-box">
                 <app-challenge-list style="width: 100%;" [challenges]="challenges"></app-challenge-list>
@@ -15,19 +24,8 @@
         </mat-tab>
         <mat-tab>
             <ng-template mat-tab-label>
-                <img class="rule-icon" src="assets/_img/_icons/team.png">
-                teams
-            </ng-template>
-            <div class="rules-tab-content main-content-box">
-                <span *ngFor="let team of teams">
-                    <app-team [team]="team"></app-team>
-                </span>
-            </div>
-        </mat-tab>
-        <mat-tab>
-            <ng-template mat-tab-label>
                 <img class="rule-icon" src="assets/_img/_icons/ball.png">
-                ball cards
+                balls
             </ng-template>
             <div class="rules-tab-content main-content-box">
                 <span *ngFor="let team of teams">

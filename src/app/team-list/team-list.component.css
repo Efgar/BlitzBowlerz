@@ -1,4 +1,4 @@
-.challenges-section-container {
+.teams-section-container {
     width: 100%; 
     display: flex; 
     flex-direction: column;
@@ -6,14 +6,34 @@
     --search-text-font: var(--main-font-family);
 }
 
-.challenges-search-section {
+.teams-search-section {
     margin-top: 10px; 
     display: flex; 
     justify-content: space-evenly;
 }
 
-.challenges-search-input{
+.teams-search-input{
     width: 100px;
+}
+
+.teams-search-icons {
+    color: var(--search-text-color) !important;
+}
+
+.teams-search-icons svg {
+    fill: var(--search-text-color);
+}
+
+.teams-search-checkbox {
+    font-family: var(--main-font-family) !important;
+    color:  var(--search-text-color);
+    margin-top: 12px;
+}
+
+.teams-list-container {
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap 
 }
 
 .mat-input-element  {
@@ -36,18 +56,3 @@
     font-family: var(--search-text-font) !important;
     color: var(--search-text-color) !important;
 }
-
-.challenges-search-icons {
-    color: var(--search-text-color) !important;
-}
-
-.challenges-search-icons svg {
-    fill: var(--search-text-color);
-}
-
-.challenges-search-checkbox {
-    font-family: var(--main-font-family) !important;
-    color:  var(--search-text-color);
-    margin-top: 12px;
-}
-

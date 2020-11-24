@@ -23,6 +23,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { TeamListComponent } from './team-list/team-list.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     TeamDetailsComponent,
     RulesDashboardComponent,
     ChallengeComponent,
-    ChallengeListComponent
+    ChallengeListComponent,
+    TeamListComponent
   ],
   imports: [
     BrowserModule,
