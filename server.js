@@ -1,14 +1,7 @@
 //Install express server
 const express = require('express');
 const path = require('path');
-
 const app = express();
-
-const path = require('path');
-app.get('/*', function(req,res) {
-        res.sendFile(path.join(__dirname+'/dist/BlitzBowlers/index.html'));
-    }
-);
 
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist/BlitzBowlers'));
