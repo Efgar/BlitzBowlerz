@@ -1,0 +1,26 @@
+<div class="ball-section-container">
+    <div class="ball-search-section">
+        <mat-form-field class="ball-search-input">
+            <mat-label><mat-icon class="ball-search-icons">search</mat-icon>  name</mat-label>
+            <input matInput type="text" [(ngModel)]="filterName" (keyup)="filterBall()">
+            <button mat-button *ngIf="filterName" matSuffix mat-icon-button aria-label="Clear" (click)="clearName()">
+                <mat-icon class="ball-search-icons">close</mat-icon>
+            </button>
+        </mat-form-field>
+
+        <mat-form-field class="ball-search-input">
+            <mat-label><mat-icon class="ball-search-icons">search</mat-icon>  team</mat-label>
+            <input matInput type="text" [(ngModel)]="filterRace" (keyup)="filterBall()">
+            <button mat-button *ngIf="filterRace" matSuffix mat-icon-button aria-label="Clear" (click)="clearTeam()">
+                <mat-icon class="ball-search-icons">close</mat-icon>
+            </button>
+        </mat-form-field>
+
+        <mat-checkbox class="ball-search-checkbox" [(ngModel)]="onlyOficial" (change)="filterBall()">only oficial</mat-checkbox>
+    </div>
+    
+
+    <span *ngFor="let ball of filteredBalls">
+        <app-ball [ball]="ball"></app-ball>
+    </span>
+</div>

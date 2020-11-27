@@ -1,23 +1,23 @@
-<div class="challenges-section-container">
-    <div class="challenges-search-section">
-        <mat-form-field class="challenges-search-input">
-            <mat-label><mat-icon class="challenges-search-icons">search</mat-icon>  name</mat-label>
+<div class="rules-section-container">
+    <div class="rules-search-section">
+        <mat-form-field class="rules-search-input">
+            <mat-label><mat-icon class="rules-search-icons">search</mat-icon>  name</mat-label>
             <input matInput type="text" [(ngModel)]="filterName" (keyup)="filterChallenges()">
             <button mat-button *ngIf="filterName" matSuffix mat-icon-button aria-label="Clear" (click)="clearName()">
-                <mat-icon class="challenges-search-icons">close</mat-icon>
+                <mat-icon class="rules-search-icons">close</mat-icon>
             </button>
         </mat-form-field>
 
-        <mat-form-field class="challenges-search-input">
-            <mat-label><mat-icon class="challenges-search-icons">search</mat-icon>  points</mat-label>
+        <mat-form-field class="rules-search-input">
+            <mat-label><mat-icon class="rules-search-icons">search</mat-icon>  points</mat-label>
             <input matInput type="text" [(ngModel)]="filterPoints" maxlength="1" (keypress)="numberOnly($event)" (keyup)="filterChallenges()">
             <button mat-button *ngIf="filterPoints" matSuffix mat-icon-button aria-label="Clear" (click)="clearPoints()">
-                <mat-icon class="challenges-search-icons">close</mat-icon>
+                <mat-icon class="rules-search-icons">close</mat-icon>
             </button>
         </mat-form-field>
 
-        <mat-checkbox class="challenges-search-checkbox" [(ngModel)]="onlyOficial" (change)="filterChallenges()">only oficial</mat-checkbox>
-        <mat-checkbox class="challenges-search-checkbox" [(ngModel)]="onlyEndgame" (change)="filterChallenges()">only endgame</mat-checkbox>
+        <mat-checkbox class="rules-search-checkbox" [(ngModel)]="onlyOficial" (change)="filterChallenges()">only oficial</mat-checkbox>
+        <mat-checkbox class="rules-search-checkbox" [(ngModel)]="onlyEndgame" (change)="filterChallenges()">only endgame</mat-checkbox>
     </div>
     
 

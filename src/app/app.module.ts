@@ -24,6 +24,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TeamListComponent } from './team-list/team-list.component';
+import { BallListComponent } from './ball-list/ball-list.component';
+import { BallComponent } from './ball/ball.component';
+import { LeagueRuleComponent } from './league-rule/league-rule.component';
+import { LeagueRuleListComponent } from './league-rule-list/league-rule-list.component';
+import { LeagueComponent } from './league/league.component';
+import { OtherRulesListComponent } from './other-rules-list/other-rules-list.component';
+import { LeagueTeamComponent } from './league-team/league-team.component';
+import { LeagueGameComponent } from './league-game/league-game.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +43,15 @@ import { TeamListComponent } from './team-list/team-list.component';
     RulesDashboardComponent,
     ChallengeComponent,
     ChallengeListComponent,
-    TeamListComponent
+    TeamListComponent,
+    BallListComponent,
+    BallComponent,
+    LeagueRuleComponent,
+    LeagueRuleListComponent,
+    LeagueComponent,
+    OtherRulesListComponent,
+    LeagueTeamComponent,
+    LeagueGameComponent
   ],
   imports: [
     BrowserModule,

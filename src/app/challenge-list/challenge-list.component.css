@@ -1,21 +1,3 @@
-.challenges-section-container {
-    width: 100%; 
-    display: flex; 
-    flex-direction: column;
-    --search-text-color: white;
-    --search-text-font: var(--main-font-family);
-}
-
-.challenges-search-section {
-    margin-top: 10px; 
-    display: flex; 
-    justify-content: space-evenly;
-}
-
-.challenges-search-input{
-    width: 100px;
-}
-
 .mat-input-element  {
     text-transform: lowercase;
     font-family: var(--search-text-font) !important;
@@ -35,19 +17,5 @@
 .mat-form-field-label  {
     font-family: var(--search-text-font) !important;
     color: var(--search-text-color) !important;
-}
-
-.challenges-search-icons {
-    color: var(--search-text-color) !important;
-}
-
-.challenges-search-icons svg {
-    fill: var(--search-text-color);
-}
-
-.challenges-search-checkbox {
-    font-family: var(--main-font-family) !important;
-    color:  var(--search-text-color);
-    margin-top: 12px;
 }
 
