@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Challenge } from '../_classes/challenge';
+import { Challenge } from '../../_classes/challenge';
 
 @Component({
   selector: 'app-challenge',

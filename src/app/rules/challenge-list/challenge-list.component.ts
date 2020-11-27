@@ -1,11 +1,11 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
-import { Challenge } from '../_classes/challenge';
+import { Challenge } from '../../_classes/challenge';
 
 @Component({
   selector: 'app-challenge-list',
   encapsulation: ViewEncapsulation.None,
   templateUrl: './challenge-list.component.html',
-  styleUrls: ['./challenge-list.component.css']
+  styleUrls: ['./challenge-list.component.css', '../common-styles.css']
 })
 export class ChallengeListComponent implements OnInit {
   @Input() challenges: Challenge[];

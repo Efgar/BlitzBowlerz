@@ -1,7 +1,33 @@
-.teams-list-container {
+.rules-section-container {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+    --search-text-color: white;
+    --search-text-font: var(--main-font-family);
+}
+
+.rules-search-section {
+    margin-top: 10px; 
     display: flex; 
     justify-content: space-evenly;
-    flex-wrap: wrap 
+}
+
+.rules-search-input{
+    width: 100px;
+}
+
+.rules-search-icons {
+    color: var(--search-text-color) !important;
+}
+
+.rules-search-icons svg {
+    fill: var(--search-text-color);
+}
+
+.rules-search-checkbox {
+    font-family: var(--main-font-family) !important;
+    color:  var(--search-text-color);
+    margin-top: 12px;
 }
 
 .mat-input-element  {

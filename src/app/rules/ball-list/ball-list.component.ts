@@ -1,10 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Ball } from '../_classes/ball';
+import { Ball } from '../../_classes/ball';
 
 @Component({
   selector: 'app-ball-list',
   templateUrl: './ball-list.component.html',
-  styleUrls: ['./ball-list.component.css']
+  styleUrls: ['./ball-list.component.css', '../common-styles.css']
 })
 export class BallListComponent implements OnInit {
   @Input() balls: Ball[];

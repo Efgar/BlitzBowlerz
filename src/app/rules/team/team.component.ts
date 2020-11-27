@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, Input } from '@angular/core';
 
 import { MatAccordion } from '@angular/material/expansion';
-import { Team } from '../_classes/team';
+import { Team } from '../../_classes/team';
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',

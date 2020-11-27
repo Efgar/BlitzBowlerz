@@ -5,13 +5,21 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PlayerComponent } from './player/player.component';
-import { TeamComponent } from './team/team.component';
-import { GameComponent } from './game/game.component';
-import { TeamDetailsComponent } from './team-details/team-details.component';
-import { RulesDashboardComponent } from './rules-dashboard/rules-dashboard.component';
-import { ChallengeComponent } from './challenge/challenge.component';
-import { ChallengeListComponent } from './challenge-list/challenge-list.component';
+import { PlayerComponent } from './rules/player/player.component';
+import { TeamComponent } from './rules/team/team.component';
+import { TeamDetailsComponent } from './rules/team-details/team-details.component';
+import { RulesDashboardComponent } from './rules/rules-dashboard/rules-dashboard.component';
+import { ChallengeComponent } from './rules/challenge/challenge.component';
+import { ChallengeListComponent } from './rules/challenge-list/challenge-list.component';
+import { TeamListComponent } from './rules/team-list/team-list.component';
+import { BallListComponent } from './rules/ball-list/ball-list.component';
+import { BallComponent } from './rules/ball/ball.component';
+import { LeagueRuleComponent } from './league/league-rule/league-rule.component';
+import { LeagueRuleListComponent } from './league/league-rule-list/league-rule-list.component';
+import { LeagueComponent } from './league/league/league.component';
+import { OtherRulesListComponent } from './rules/other-rules-list/other-rules-list.component';
+import { LeagueTeamComponent } from './league/league-team/league-team.component';
+import { LeagueGameComponent } from './league/league-game/league-game.component';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -23,22 +31,12 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { TeamListComponent } from './team-list/team-list.component';
-import { BallListComponent } from './ball-list/ball-list.component';
-import { BallComponent } from './ball/ball.component';
-import { LeagueRuleComponent } from './league-rule/league-rule.component';
-import { LeagueRuleListComponent } from './league-rule-list/league-rule-list.component';
-import { LeagueComponent } from './league/league.component';
-import { OtherRulesListComponent } from './other-rules-list/other-rules-list.component';
-import { LeagueTeamComponent } from './league-team/league-team.component';
-import { LeagueGameComponent } from './league-game/league-game.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlayerComponent,
     TeamComponent,
-    GameComponent,
     TeamDetailsComponent,
     RulesDashboardComponent,
     ChallengeComponent,

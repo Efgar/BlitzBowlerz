@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { Team } from '../_classes/team';
-import { RulesService } from '../_services/rules.service';
-import { Challenge } from '../_classes/challenge';
-import { Ball } from '../_classes/ball';
+import { Team } from '../../_classes/team';
+import { RulesService } from '../../_services/rules.service';
+import { Challenge } from '../../_classes/challenge';
+import { Ball } from '../../_classes/ball';
 
 @Component({
   selector: 'app-rules-dashboard',

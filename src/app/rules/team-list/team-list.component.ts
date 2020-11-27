@@ -1,12 +1,12 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
-import { Team } from '../_classes/team';
-import { Flag } from '../_classes/flag';
+import { Team } from '../../_classes/team';
+import { Flag } from '../../_classes/flag';
 
 @Component({
   selector: 'app-team-list',
   encapsulation: ViewEncapsulation.None,
   templateUrl: './team-list.component.html',
-  styleUrls: ['./team-list.component.css']
+  styleUrls: ['./team-list.component.css', '../common-styles.css']
 })
 export class TeamListComponent implements OnInit {
   @Input() teams: Team[];
