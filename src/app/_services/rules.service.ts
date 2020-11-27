@@ -41,7 +41,15 @@ export class RulesService {
   }
 
   getBallRules(): Ball[] {
-    return [];
+    return [
+      {
+        name: "bouncer",
+        race: "goblin",
+        image: "assets/_img/_teams/Orcs.png",
+        effect: "bouncy bouncy castle",
+        isHomeBrew: true,
+      }
+    ];
   }
 
   getTeams(): Team[] {

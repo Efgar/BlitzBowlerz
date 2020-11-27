@@ -17,6 +17,7 @@ export class BallListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.filterBall();
   }
 
   filterBall(): void {

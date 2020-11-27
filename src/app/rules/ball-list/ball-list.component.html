@@ -19,7 +19,6 @@
         <mat-checkbox class="rules-search-checkbox" [(ngModel)]="onlyOficial" (change)="filterBall()">only oficial</mat-checkbox>
     </div>
     
-
     <span *ngFor="let ball of filteredBalls">
         <app-ball [ball]="ball"></app-ball>
     </span>

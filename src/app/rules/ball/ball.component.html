@@ -1,0 +1,22 @@
+<mat-expansion-panel class="ball-container" hideToggle>
+    <mat-expansion-panel-header>
+        <div class="ball-title">
+            <div class="ball-title-side left">
+                <div class="ball-title-text">
+                    <h2>{{ball?.name}}</h2>
+                </div>
+            </div>
+            <div class="ball-title-side right">
+                <div class="ball-title-text">
+                    <h3> Race: {{ball?.race}}</h3>
+                </div>
+                <button mat-icon-button disabled *ngIf="ball?.isHomeBrew" matTooltip="{{hombreFlag.name}}:&#13;{{hombreFlag.description}}">
+                    <img [src]="hombreFlag.icon" [alt]="hombreFlag.name" class="ball-flag">
+                </button>
+            </div>
+        </div>
+    </mat-expansion-panel-header>
+    <div class="ball-description">
+        {{ball?.effect}}
+    </div>
+</mat-expansion-panel>
