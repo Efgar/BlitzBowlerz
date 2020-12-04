@@ -19,4 +19,22 @@
         <mat-checkbox class="rules-search-checkbox" [(ngModel)]="onlyLeagueRules" (change)="filterRules()">only league rules</mat-checkbox>
         <mat-checkbox class="rules-search-checkbox" [(ngModel)]="onlyOficial" (change)="filterRules()">only oficial</mat-checkbox>
     </div>
+
+    <span>
+        <mat-expansion-panel class="rule-container" hideToggle>
+            <mat-expansion-panel-header>
+                <div class="rule-title">
+                    <div class="rule-title-text">
+                        <h2>coach traits</h2>
+                        <h3>List of posible team boons on a league</h3>
+                    </div>
+                    <button mat-icon-button disabled>
+                    </button>
+                </div>
+            </mat-expansion-panel-header>
+            <div class="rule-description">
+                After a playing a league game (not a finals, semi-finals or quarter-finals match), both coaches will gain one Coach Trait.
+            </div>
+        </mat-expansion-panel>
+    </span>
 </div>

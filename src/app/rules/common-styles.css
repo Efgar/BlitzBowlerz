@@ -30,6 +30,58 @@
     margin-top: 12px;
 }
 
+
+/* Simple common styles */
+.rule-container{
+    margin: auto !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    width: 90%;
+    background: darkred;
+}
+
+.rule-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rule-title-text {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.rule-title-text h2{
+    flex: 1;
+    font-family: var(--main-font-family);
+    font-size: medium;
+    margin: auto;
+    padding-left: 2px;
+}
+
+.rule-title-text h3{
+    flex: 2;
+    font-family: var(--secondary-font-family);
+    font-size: medium;
+    margin: auto;
+    padding-left: 2px;
+}
+
+.rule-flag {
+    vertical-align: sub !important; 
+    max-width: 50%;
+}
+
+.rule-description {
+    padding-top: 10px;
+    font-family: var(--content-font-family);
+    max-width: 100%;
+}
+
+
+
 /* Overwriting some angular material styles */
 .mat-input-element  {
     text-transform: lowercase;

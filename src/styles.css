@@ -24,6 +24,7 @@ html, body {
     --secondary-color: rgb(61, 61, 61);
     --main-font-family: Gutcruncher;
     --secondary-font-family: ShadowsIntoLight;
+    --content-font-family: arial;
 }
 
 body { 

@@ -1,1 +1,16 @@
-<p>rule works!</p>
+<mat-expansion-panel class="rule-container" hideToggle>
+    <mat-expansion-panel-header>
+        <div class="rule-title">
+            <div class="rule-title-text">
+                <h2>{{rule?.name}}</h2>
+                <h3> {{rule?.sumary}}</h3>
+            </div>
+            <button mat-icon-button disabled matTooltip="{{hombreFlag.name}}:&#13;{{hombreFlag.description}}">
+                <img [src]="hombreFlag.icon" [alt]="hombreFlag.name" class="rule-flag" *ngIf="rule?.isHomeBrew" >
+            </button>
+        </div>
+    </mat-expansion-panel-header>
+    <div class="rule-description">
+        {{rule?.description}}
+    </div>
+</mat-expansion-panel>
