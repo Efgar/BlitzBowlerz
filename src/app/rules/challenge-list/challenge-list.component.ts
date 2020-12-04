@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+import { RulesService } from 'src/app/_services/rules.service';
 import { Challenge } from '../../_classes/challenge';
 
 @Component({
@@ -8,7 +9,7 @@ import { Challenge } from '../../_classes/challenge';
   styleUrls: ['./challenge-list.component.css', '../common-styles.css']
 })
 export class ChallengeListComponent implements OnInit {
-  @Input() challenges: Challenge[];
+  challenges: Challenge[];
   endgameChallenges: Challenge[] = [];
   midgameChallenges: Challenge[] = [];
 
@@ -17,9 +18,10 @@ export class ChallengeListComponent implements OnInit {
   onlyOficial: boolean = false;
   onlyEndgame: boolean = false;
 
-  constructor() { }
+  constructor(private rulesService: RulesService) { }
 
   ngOnInit(): void {
+    this.challenges = this.rulesService.getChallengeCards();
     this.filterChallenges();
   }
 
@@ -29,7 +31,7 @@ export class ChallengeListComponent implements OnInit {
           var nameMatcher = new RegExp(this.filterName.toLowerCase(), 'g');
           return (challenge.bonusPlayName.toLowerCase().match(nameMatcher) || challenge.name.toLowerCase().match(nameMatcher)) &&
             (this.filterPoints ? challenge.points == this.filterPoints : true) &&
-            (this.onlyOficial ? challenge.isHomeBrew == false : true) &&
+            (this.onlyOficial ? challenge.isHomebrew == false : true) &&
             (this.onlyEndgame ? challenge.isEndGame == true : true);
 
         }

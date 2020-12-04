@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 import { Team } from '../../_classes/team';
 import { Flag } from '../../_classes/flag';
+import { RulesService } from 'src/app/_services/rules.service';
 
 @Component({
   selector: 'app-team-list',
@@ -9,7 +10,7 @@ import { Flag } from '../../_classes/flag';
   styleUrls: ['./team-list.component.css', '../common-styles.css']
 })
 export class TeamListComponent implements OnInit {
-  @Input() teams: Team[];
+  teams: Team[];
   filteredTeams: Team[] = [];
 
   filterName: string = "";
@@ -17,9 +18,10 @@ export class TeamListComponent implements OnInit {
   onlyOficial: boolean = false;
   includeBeta: boolean = true;
 
-  constructor() { }
+  constructor(private rulesService: RulesService) { }
 
   ngOnInit(): void {
+    this.teams = this.rulesService.getTeams();
     this.filterTeams()
   }
 

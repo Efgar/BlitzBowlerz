@@ -3,5 +3,5 @@ export class Ball {
     race: string;
     image: string;
     effect: string;
-    isHomeBrew: boolean;
+    isHomebrew: boolean;
 }

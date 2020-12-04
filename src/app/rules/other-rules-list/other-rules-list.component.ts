@@ -7,7 +7,7 @@ import { Rule } from 'src/app/_classes/rule';
   styleUrls: ['./other-rules-list.component.css']
 })
 export class OtherRulesListComponent implements OnInit {
-  @Input() rules: Rule[];
+  rules: Rule[];
   filteredRules : Rule[];
 
   filterName: string = "";

@@ -20,7 +20,7 @@ export class RulesService {
         bonusPlayName: "The bonus play",
         bonusPlayText: "This is how we play the play",
         isEndGame: false,
-        isHomeBrew: false,
+        isHomebrew: false,
         faqs: [
           "Da rule is clear",
           "Da rule is the rule"
@@ -34,7 +34,7 @@ export class RulesService {
         bonusPlayName: "The Endgame bonus play",
         bonusPlayText: "This is how we play the End play",
         isEndGame: true,
-        isHomeBrew: true,
+        isHomebrew: true,
         faqs: []
       }
     ];
@@ -47,7 +47,7 @@ export class RulesService {
         race: "goblin",
         image: "assets/_img/_teams/Orcs.png",
         effect: "bouncy bouncy castle",
-        isHomeBrew: true,
+        isHomebrew: true,
       }
     ];
   }
