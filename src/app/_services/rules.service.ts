@@ -4,11 +4,46 @@ import { Flag } from '../_classes/flag';
 import { Ball } from '../_classes/ball';
 import { Challenge } from '../_classes/challenge';
 import { Team } from '../_classes/team';
+import { Rule } from '../_classes/rule';
+import { CoachTrait } from '../_classes/coach-trait';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RulesService {
+  getCoachTrait(): CoachTrait[] {
+    return [
+      {
+        name: "Linemens",
+        description: "Your linemmen are awesome",
+        isHomebrew : true
+      },
+      {
+        name: "Sponsored Kit",
+        description: "After making an Armour check, you can re-roll the dice.",
+        diceRoll: 3,
+        isHomebrew : false
+      }
+    ];
+  }
+  getOtherRules(): Rule[] {
+    return [
+      {
+        name: "Multiple balls",
+        sumary: "All of them",
+        description: "Put more balls",
+        tags: ["optional", "balls", "league"],
+        isHomebrew : false
+      },
+      {
+        name: "Ugly orks",
+        sumary: "orks are ugly",
+        description: "so ugly they hurt, +1 str",
+        tags: ["optional", "race"],
+        isHomebrew : true
+      }
+    ];
+  }
   
   getChallengeCards(): Challenge[] {
     return [

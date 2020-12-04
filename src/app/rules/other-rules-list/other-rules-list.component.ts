@@ -1,5 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CoachTrait } from 'src/app/_classes/coach-trait';
+import { Flag } from 'src/app/_classes/flag';
 import { Rule } from 'src/app/_classes/rule';
+import { RulesService } from 'src/app/_services/rules.service';
 
 @Component({
   selector: 'app-other-rules-list',
@@ -8,16 +11,20 @@ import { Rule } from 'src/app/_classes/rule';
 })
 export class OtherRulesListComponent implements OnInit {
   rules: Rule[];
+  coachTraits: CoachTrait[];
   filteredRules : Rule[];
+  hombrewFlag = Flag.HOMEBREW;
 
   filterName: string = "";
   filterTag: string = "";
   onlyLeagueRules: boolean = false;
   onlyOficial: boolean = false;
 
-  constructor() { }
+  constructor(private rulesService: RulesService) { }
 
   ngOnInit(): void {
+    this.rules = this.rulesService.getOtherRules();
+    this.coachTraits = this.rulesService.getCoachTrait();
     this.filterRules();
   }
 

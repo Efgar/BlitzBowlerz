@@ -9,7 +9,7 @@ import { Flag } from '../../_classes/flag';
 })
 export class BallComponent implements OnInit {
   @Input() ball: Ball;
-  hombreFlag = Flag.HOMEBREW;
+  hombrewFlag = Flag.HOMEBREW;
 
   constructor() { }
 

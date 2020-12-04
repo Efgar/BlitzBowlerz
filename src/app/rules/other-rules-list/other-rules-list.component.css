@@ -1,0 +1,25 @@
+.traits-table{
+    padding-top: 10px;
+    margin: auto;
+    width: 90%;
+}
+
+.traits-table td, th{
+    font-family: var(--content-font-family);
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0;
+}
+
+.traits-table td{
+    text-align: center;
+    font-weight: bold;
+}
+
+.traits-description {
+    text-align: left !important;
+    font-weight: normal !important;
+}

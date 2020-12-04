@@ -9,7 +9,7 @@ import { Rule } from 'src/app/_classes/rule';
 })
 export class RuleComponent implements OnInit {
   @Input() rule: Rule;
-  hombreFlag = Flag.HOMEBREW;
+  hombrewFlag = Flag.HOMEBREW;
 
   constructor() { }
 

@@ -54,6 +54,7 @@
 }
 
 .rule-title-text h2{
+    text-transform: lowercase;
     flex: 1;
     font-family: var(--main-font-family);
     font-size: medium;

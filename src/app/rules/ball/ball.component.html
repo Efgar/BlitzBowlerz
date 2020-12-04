@@ -5,8 +5,8 @@
                 <h2>{{ball?.name}}</h2>
                 <h3> Race: {{ball?.race}}</h3>
             </div>
-            <button mat-icon-button disabled matTooltip="{{hombreFlag.name}}:&#13;{{hombreFlag.description}}">
-                <img [src]="hombreFlag.icon" [alt]="hombreFlag.name" class="rule-flag" *ngIf="ball?.isHomebrew" >
+            <button mat-icon-button disabled matTooltip="{{hombrewFlag.name}}:&#13;{{hombrewFlag.description}}">
+                <img [src]="hombrewFlag.icon" [alt]="hombrewFlag.name" class="rule-flag" *ngIf="ball?.isHomebrew" >
             </button>
         </div>
     </mat-expansion-panel-header>
