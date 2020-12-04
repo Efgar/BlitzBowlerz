@@ -94,7 +94,7 @@ export class RulesService {
         color: "DarkRed",
         icon: "assets/_img/_teams/Orcs.png",
         race: ["Orcs"],
-        rooster: [
+        roster: [
           {
             amount: 2,
             player: {
@@ -138,7 +138,7 @@ export class RulesService {
         color: "blue",
         icon: "assets/_img/_teams/Dwarven.png",
         race: ["Dwarfs"],
-        rooster: [
+        roster: [
           {
             amount: 1,
             player: {
@@ -166,7 +166,7 @@ export class RulesService {
         color: "rgb(38, 77, 20)",
         icon: "assets/_img/_teams/Dwarven.png",
         race: ["Skaven", "Goblin"],
-        rooster: [
+        roster: [
           {
             amount: 2,
             player: {

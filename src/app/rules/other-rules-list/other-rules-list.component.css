@@ -7,7 +7,7 @@
 .traits-table td, th{
     font-family: var(--content-font-family);
     color: black;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid white;
     padding-left: 0.5rem;
     padding-right: 0.5rem;

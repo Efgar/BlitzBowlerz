@@ -13,6 +13,7 @@ export class OtherRulesListComponent implements OnInit {
   rules: Rule[];
   coachTraits: CoachTrait[];
   filteredRules : Rule[];
+  filteredTraits : CoachTrait[];
   hombrewFlag = Flag.HOMEBREW;
 
   filterName: string = "";
@@ -40,6 +41,13 @@ export class OtherRulesListComponent implements OnInit {
             (this.onlyLeagueRules ? rule.tags?.toString().toLowerCase().match(leagueMatcher): true);
         }
       );
+
+      
+    this.filteredTraits = this.coachTraits
+    .filter(trait => {
+        return (this.onlyOficial ? trait.isHomebrew == false : true);
+      }
+    );
   }
 
   clearTag() {

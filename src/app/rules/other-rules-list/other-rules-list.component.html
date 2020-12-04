@@ -44,7 +44,7 @@
                         <th>Trait</th>
                         <th>Flags</th>
                     </tr>
-                    <tr *ngFor="let trait of coachTraits">
+                    <tr *ngFor="let trait of filteredTraits">
                         <td>{{trait.diceRoll}}</td>
                         <td class="traits-description"><b>{{trait.name}}:</b> {{trait.description}}</td>
                         <td>

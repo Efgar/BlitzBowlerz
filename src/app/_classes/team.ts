@@ -6,6 +6,6 @@ export class Team {
     color: string;
     icon: string;
     race: string[];
-    rooster: { amount: number, player: Player }[];
+    roster: { amount: number, player: Player }[];
     flags: Flag[];
 }
