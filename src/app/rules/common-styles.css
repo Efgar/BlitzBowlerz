@@ -2,7 +2,7 @@
     width: 100%; 
     display: flex; 
     flex-direction: column;
-    --search-text-color: white;
+    --search-text-color: black;
     --search-text-font: var(--main-font-family);
 }
 
@@ -50,4 +50,8 @@
 .mat-form-field-label  {
     font-family: var(--search-text-font) !important;
     color: var(--search-text-color) !important;
+}
+
+.mat-checkbox-frame {
+    border: 2px solid var(--search-text-color) !important;
 }

@@ -16,6 +16,7 @@ import { BallListComponent } from './rules/ball-list/ball-list.component';
 import { BallComponent } from './rules/ball/ball.component';
 import { LeagueComponent } from './league/league/league.component';
 import { OtherRulesListComponent } from './rules/other-rules-list/other-rules-list.component';
+import { RuleComponent } from './rules/rule/rule.component';
 import { LeagueTeamComponent } from './league/league-team/league-team.component';
 import { LeagueGameComponent } from './league/league-game/league-game.component';
 
@@ -44,6 +45,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     BallComponent,
     LeagueComponent,
     OtherRulesListComponent,
+    RuleComponent,
     LeagueTeamComponent,
     LeagueGameComponent
   ],

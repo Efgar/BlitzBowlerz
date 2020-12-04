@@ -64,22 +64,19 @@
 }
 
 .mat-tab-header  {
-    background: url(../../../assets/_img/_textures/45-degree-fabric-light.png), var(--secondary-color);
+    background: var(--secondary-color);
     color: white;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
 }
 
 .mat-tab-label {
     font-family: var(--main-font-family);
     color: white;
-    opacity: 1 !important;
 }
 
 .mat-tab-label.mat-tab-label-active {
     background-color: rgb(255, 255, 255, 0.2);
     color: white;
-    text-shadow: 0 0 2px black, 0 0 10px #ffffff;
+    text-shadow: 2px 2px 4px black, 0 0 10px #ffffff;
     opacity: 1;
 }
 

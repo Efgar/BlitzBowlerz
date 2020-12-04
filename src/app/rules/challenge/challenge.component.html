@@ -27,7 +27,6 @@
             </div>
         </div>
         <div class="info-box">
-            <h2 style="color: black;">general info</h2>
             <b *ngIf="challenge.isEndGame">Endgame challenge / </b><b>{{challenge.points}} Points</b>
             
             <p class="challenge-info-faq" *ngFor="let faq of challenge.faqs">

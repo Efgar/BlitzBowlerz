@@ -55,6 +55,7 @@
 }
 
 .challenge-content {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     font-family: var(--secondary-font-family);

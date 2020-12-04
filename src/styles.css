@@ -21,7 +21,7 @@ html, body {
     height: 100%; 
     --blitzer-blue: rgb(  20, 51, 114  );
     --primary-color: black;
-    --secondary-color: rgb(39, 24, 10);
+    --secondary-color: rgb(61, 61, 61);
     --main-font-family: Gutcruncher;
     --secondary-font-family: ShadowsIntoLight;
 }
@@ -33,14 +33,17 @@ body {
 
 
 .info-box {
+    margin-top: 20px;
     border-radius: 10px;
     color: black;
     padding: 5px;
     font-family: var(--secondary-font-family); 
     text-align: center; 
-    width: 100%; 
+    margin-left: 10%;
+    width: 80%; 
     background: url(./assets/_img/_textures/leather.png), rgb(227, 228, 207);
     box-shadow: 1px 1px 5px 3px var(--secondary-color);
+    opacity: 0.9;
 }
 
 .info-box h2{
@@ -53,7 +56,7 @@ body {
 
 .info-box p {
     text-align: left;
-    margin-bottom: 5px;
+    margin: 5px;
 }
 
 .main-content-box {

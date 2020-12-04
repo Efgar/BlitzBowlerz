@@ -7,7 +7,9 @@
     flex-direction: column;
     overflow: auto;
     min-height: 100%;
-    background: url(../assets/_img/_textures/football-no-lines.png), rgb(26, 39, 31);
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .main-container::before {
@@ -32,11 +34,10 @@
 }
 
 .titlebar-container{
-    background: url(../assets/_img/_textures/45-degree-fabric-light.png), var(--primary-color);
+    background: var(--primary-color);
     z-index: 10;
     flex: 1 1 auto;
     max-height: 20px;
-    border-bottom: 2px solid white;
 }
 
 .titlebar{
