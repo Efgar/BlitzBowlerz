@@ -31,6 +31,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
+import { HttpClientModule } from "@angular/common/http"; 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +66,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatTabsModule,
     MatToolbarModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

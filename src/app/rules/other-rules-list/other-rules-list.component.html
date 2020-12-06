@@ -47,11 +47,7 @@
                     <tr *ngFor="let trait of filteredTraits">
                         <td>{{trait.diceRoll}}</td>
                         <td class="traits-description"><b>{{trait.name}}:</b> {{trait.description}}</td>
-                        <td>
-                            <button mat-icon-button disabled matTooltip="{{hombrewFlag.name}}:&#13;{{hombrewFlag.description}}">
-                                <img [src]="hombrewFlag.icon" [alt]="hombrewFlag.name" class="rule-flag" *ngIf="trait?.isHomebrew" >
-                            </button>
-                        </td>
+                        <td><mat-icon class="trait-flag" svgIcon="homebrew" *ngIf="trait?.isHomebrew"  matTooltip="{{hombrewFlag.name}}:&#13;{{hombrewFlag.description}}"></mat-icon></td>
                     </tr>
                 </table>
             </div>

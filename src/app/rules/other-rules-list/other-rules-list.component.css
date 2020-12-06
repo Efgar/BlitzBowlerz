@@ -2,12 +2,14 @@
     padding-top: 10px;
     margin: auto;
     width: 90%;
+    --table-fill-color: black;
+    --table-background-color: rgba(255, 255, 255, 0.8);
 }
 
 .traits-table td, th{
     font-family: var(--content-font-family);
-    color: black;
-    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--table-fill-color);
+    background-color: var(--table-background-color);
     border: 1px solid white;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -22,4 +24,9 @@
 .traits-description {
     text-align: left !important;
     font-weight: normal !important;
+}
+
+.trait-flag {
+    width: 50%;
+    fill: var(--table-fill-color);
 }
