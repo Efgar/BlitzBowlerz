@@ -4,9 +4,9 @@ import { Flag } from './flag';
 export class Player {
     name:string;
     picture:string;
-    abilities:Ability[];
+    abilities:Ability[] = [];
     move:string;
     throw:string;
     armor:string;
-    flags:Flag[];
+    flags?:Flag[] = [];
 }

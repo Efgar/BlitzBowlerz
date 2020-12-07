@@ -77,6 +77,11 @@ hr.dashed {
     font-family: var(--main-font-family) !important;
 }
 
+.player-table{
+    margin: auto;
+    margin-top: 15px;
+}
+
 .player-table td, th{
     text-transform: lowercase;
     font-family: var(--content-font-family);
@@ -93,8 +98,7 @@ hr.dashed {
 }
 
 .player-skills {
-    max-width: 25%;
-    max-height: none;
+    width: 18px !important;
     margin-right: 5px;
 }
 

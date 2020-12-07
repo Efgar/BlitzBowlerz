@@ -7,5 +7,5 @@ export class Challenge {
     bonusPlayText: string;
     isEndGame: boolean;
     isHomebrew: boolean;
-    faqs: string[];
+    faqs?: string[];
 }

@@ -32,8 +32,8 @@ export class TeamListComponent implements OnInit {
 
       return team.name.toLowerCase().match(nameMatcher) &&
             team.race.toString().toLowerCase().match(raceMatcher) &&
-            (this.onlyOficial ? team.flags.indexOf(Flag.HOMEBREW) < 0 : true) &&
-            (!this.includeBeta ? team.flags.indexOf(Flag.BETA) < 0 : true)
+            (this.onlyOficial && team.flags?.length > 0 ? team.flags?.indexOf(Flag.HOMEBREW) < 0 : true) &&
+            (!this.includeBeta && team.flags?.length > 0 ? team.flags?.indexOf(Flag.BETA) < 0 : true)
     });
   }
 

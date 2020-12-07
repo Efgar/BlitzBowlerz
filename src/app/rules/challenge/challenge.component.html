@@ -27,9 +27,9 @@
             </div>
         </div>
         <div class="info-box">
-            <b *ngIf="challenge.isEndGame">Endgame challenge / </b><b>{{challenge.points}} Points</b>
+            <h2><b *ngIf="challenge.isHomebrew">Homebrew / </b><b *ngIf="challenge.isEndGame">Endgame challenge / </b><b>{{challenge.points}} Points</b></h2>
             
-            <p class="challenge-info-faq" *ngFor="let faq of challenge.faqs">
+            <p *ngFor="let faq of challenge.faqs">
                 - {{faq}}
             </p>
         </div>

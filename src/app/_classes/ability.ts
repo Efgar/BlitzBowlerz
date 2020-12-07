@@ -4,7 +4,7 @@ export class Ability {
     icon: string;
     name:string;
     description:string;
-    flags:Flag[];
+    flags?:Flag[];
 
     constructor(icon: string, name: string, description: string, flags:Flag[]) {
         this.icon = icon;
@@ -13,6 +13,6 @@ export class Ability {
         this.flags = flags
     }
 
-    static PASS = new Ability("assets/_img/_skills/passing.png", "Pass", "This is a pass description", [Flag.OFICIAL]);
-    static SURE_HANDS = new Ability("assets/_img/_skills/sure_hands.png", "Sure Hands", "Sure hands for sure", [Flag.OFICIAL]);
+    static PASS = new Ability("ball", "Pass", "This is a pass description", []);
+    static SURE_HANDS = new Ability("hands", "Sure Hands", "Sure hands for sure", []);
 }

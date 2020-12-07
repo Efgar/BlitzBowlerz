@@ -26,7 +26,12 @@
     font-weight: normal !important;
 }
 
-.trait-flag {
+.white-flag {
     width: 50%;
-    fill: var(--table-fill-color);
+    fill: white;
+}
+
+.black-flag {
+    width: 50%;
+    fill: black;
 }

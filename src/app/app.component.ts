@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { MatIconRegistry } from "@angular/material/icon";
-import { DomSanitizer } from "@angular/platform-browser";
+import { IconsRegistryService } from './_services/icons-registry.service';
 
 @Component({
   selector: 'app-root',
@@ -11,12 +10,8 @@ export class AppComponent {
   title = 'BlitzBowlers';
   
   constructor(
-    private matIconRegistry: MatIconRegistry,
-    private domSanitizer: DomSanitizer
+    private iconRegistryService: IconsRegistryService
   ){
-    this.matIconRegistry.addSvgIcon(
-      `homebrew`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/_img/_flags/homebrew.svg")
-    );
+    iconRegistryService.init();
   }
 }

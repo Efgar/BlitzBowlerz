@@ -7,5 +7,5 @@ export class Team {
     icon: string;
     race: string[];
     roster: { amount: number, player: Player }[];
-    flags: Flag[];
+    flags?: Flag[];
 }

@@ -40,7 +40,6 @@
     background: url('../../../assets/_img/_backgrounds/points_background_white.png') no-repeat center center;
 }
 
-
 .challenge-title-text{
     display: flex;
     flex-direction: column;
@@ -58,6 +57,6 @@
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    font-family: var(--secondary-font-family);
+    font-family: var(--content-font-family);
     margin-bottom: 5px;
 }

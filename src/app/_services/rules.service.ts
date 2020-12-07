@@ -69,8 +69,7 @@ export class RulesService {
         bonusPlayName: "The Endgame bonus play",
         bonusPlayText: "This is how we play the End play",
         isEndGame: true,
-        isHomebrew: true,
-        faqs: []
+        isHomebrew: true
       }
     ];
   }
@@ -105,10 +104,7 @@ export class RulesService {
               ],
               move: "4",
               throw: "+4",
-              armor: "+4",
-              flags: [
-                Flag.OFICIAL
-              ]
+              armor: "+4"
             }
           },
           {
@@ -121,10 +117,7 @@ export class RulesService {
               ],
               move: "4",
               throw: "+4",
-              armor: "+4",
-              flags: [
-                Flag.OFICIAL
-              ]
+              armor: "+4"
             }
           }
         ],
@@ -150,15 +143,9 @@ export class RulesService {
               ],
               move: "4",
               throw: "+4",
-              armor: "+4",
-              flags: [
-                Flag.OFICIAL
-              ]
+              armor: "+4"
             }
           }
-        ],
-        flags: [
-          Flag.OFICIAL
         ]
       },
       {
@@ -177,10 +164,7 @@ export class RulesService {
               ],
               move: "4",
               throw: "+4",
-              armor: "+4",
-              flags: [
-                Flag.OFICIAL
-              ]
+              armor: "+4"
             }
           },
           {
@@ -193,15 +177,9 @@ export class RulesService {
               ],
               move: "4",
               throw: "+4",
-              armor: "+4",
-              flags: [
-                Flag.OFICIAL
-              ]
+              armor: "+4"
             }
           }
-        ],
-        flags: [
-          Flag.OFICIAL
         ]
       }
     ];
