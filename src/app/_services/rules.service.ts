@@ -91,7 +91,7 @@ export class RulesService {
       {
         name: "The green menace",
         color: "DarkRed",
-        icon: "assets/_img/_teams/Orcs.png",
+        icon: "assets/_img/_teams/Logo_Orc_01.png",
         race: ["Orcs"],
         roster: [
           {
@@ -129,7 +129,7 @@ export class RulesService {
       {
         name: "The dwarf giants",
         color: "blue",
-        icon: "assets/_img/_teams/Dwarven.png",
+        icon: "assets/_img/_teams/Logo_Dwarf_01.png",
         race: ["Dwarfs"],
         roster: [
           {
@@ -151,7 +151,7 @@ export class RulesService {
       {
         name: "The dwarf giants",
         color: "rgb(38, 77, 20)",
-        icon: "assets/_img/_teams/Dwarven.png",
+        icon: "assets/_img/_teams/Logo_Skaven_09.png",
         race: ["Skaven", "Goblin"],
         roster: [
           {
